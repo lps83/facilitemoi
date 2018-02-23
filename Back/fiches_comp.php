@@ -8,7 +8,7 @@
                 <!-- block example table -->
 
                 <h3><span class="title">Fiches disponible</span><span class="underlined">&nbsp;</span></h3>
-                <a class="add" href="#" title="">Ajouter une fiche</a>
+                <a class="add" href="./fiches_create.php?ref=comp" title="">Ajouter une fiche</a>
                 <div class="tablebox">
 	                 <table>
                       <thead>
@@ -59,7 +59,7 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='#' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='#' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
+                            <td class="action"><a href='#' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='#' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
                           </tr><?php 
 	    }
 	    else{
@@ -74,7 +74,9 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='#' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='#' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='#' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>                          </tr> <?php  
+                            <td class="action"><a href='#' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='#' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>                          </tr> 
+                            
+                            <?php  
 		  
 	    }
 	    $i++;

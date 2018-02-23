@@ -5,12 +5,14 @@
    TEMPLATE CODE: 	    t1
    VERSION:             0.1
  *******************************************/
+
 body {
     background-color: #E2E6EA;
     color: #ffffff;
     font-family: Trebuchet MS, Verdana;
     margin: 0;
     padding: 0;
+    
 }
 
 .clear {
