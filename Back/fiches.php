@@ -7,6 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <title>BackOffice</title>
   <link type="text/css" href="./css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!--[if lte IE 6]>
     <link type="text/css" href="./css/style_ie6.css" rel="stylesheet" />
   <![endif]-->
