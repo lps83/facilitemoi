@@ -74,6 +74,9 @@ switch ($_GET['ref']) {
     case "edit":
         include 'fiches_edit.php';
         break;
+    case "create":
+        include 'fiches_create.php';
+        break;
 }
 	
 }

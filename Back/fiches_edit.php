@@ -18,6 +18,8 @@ $i=1;
 // on fait une boucle qui va faire un tour pour chaque enregistrement 
 $data = mysqli_fetch_array($result)
 
+mysqli_close($con); 
+
 		 ?>
 
 <!-- content observer -->
@@ -27,7 +29,7 @@ $data = mysqli_fetch_array($result)
                 <h3><span class="title">Edition de la fiche</span><span class="underlined">&nbsp;</span></h3>      
                 <div style="margin: auto; padding: inherit;">
 	                <FORM method="post" action="cgi-bin/script.php"></form>
-
+					
 	                
 	            <div class="row">
 

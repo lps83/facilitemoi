@@ -8,7 +8,7 @@
                 <!-- block example table -->
 
                 <h3><span class="title">Fiches disponible</span><span class="underlined">&nbsp;</span></h3>
-                <a class="add" href="./fiches_create.php?ref=comp" title="">Ajouter une fiche</a>
+                <a class="add" href="./fiches.php?ref=create&type=1" title="">Ajouter une fiche</a>
                 <div class="tablebox">
 	                 <table>
                       <thead>
