@@ -8,7 +8,7 @@
                 <!-- block example table -->
 
                 <h3><span class="title">Fiches disponible</span><span class="underlined">&nbsp;</span></h3>
-                <a class="add" href="./fiches.php?ref=create&type=2" title="">Ajouter une fiche</a>
+                <a class="add" href="./fiches.php?ref=create&type=4" title="">Ajouter une fiche</a>
                 <div class="tablebox">
 	                 <table>
                       <thead>
@@ -40,7 +40,7 @@ error_reporting(E_ALL);
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	  }
 	  
-	$qz = "SELECT * FROM fiches WHERE Section=2";
+	$qz = "SELECT * FROM fiches WHERE Section=4";
 	$result = mysqli_query($con,$qz);
 	
 $i=1;
@@ -59,7 +59,7 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='./fiches.php?ref=view&Section=obs&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=obs&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
+                            <td class="action"><a href='./fiches.php?ref=view&Section=idea&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=idea&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
                           </tr><?php 
 	    }
 	    else{
@@ -74,7 +74,7 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='./fiches.php?ref=edit&Section=obs&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=obs&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
+                            <td class="action"><a href='./fiches.php?ref=edit&Section=idea&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=idea&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
                           </tr>
                                                       
                             <?php  

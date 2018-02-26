@@ -16,41 +16,41 @@
 </head>
 
 <body>
+	
 <div id="page">
 
-  <!-- header -->
-  <div id="header">
-      <div id="logo"><h1><a href="#" title="Your site name">BackOffice - Facilite-moi :)</a></h1></div>
-      <div id="quicklink"><a href="#" title="Admin profile">Admin</a> | <a href="#" title="Help">Help</a> | <a href="#" title="logout">logout</a></div>
-  </div>
-  <!-- end header -->
+	 <!-- header -->
+	  <div id="header">
+	      <div id="logo"><h1><a href="#" title="Your site name">BackOffice - Facilite-moi :)</a></h1></div>
+	      <div id="quicklink"><a href="#" title="Admin profile">Admin</a> | <a href="#" title="Help">Help</a> | <a href="#" title="logout">logout</a></div>
+	  </div>
+	  <!-- end header -->
 
+	  <!-- main menu -->
+	  <div id="mainmenu">
+	      <ul>
+	          <li><a href="index.html" title="">Accueil</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+	          <li><a href="fiches.php" title=""class="active">Fiches</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+	          <li><a href="sauvegardes.php" title="">Sauvegardes</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+	          <li><a href="#" title="">Settings</a></li>
+	      </ul>
+	  </div>
+	  <!-- end mainmenu -->
+	
+	    <div id="submenu">
+	        <ul>
+	            <li><a href="./fiches.php?ref=comp" title=""<?php if($_GET['ref'] == "comp"){echo 'class="active"';}?> >Comprendre</a></li>
+	            <li><a href="./fiches.php?ref=obs" title=""<?php if($_GET['ref'] == "obs"){echo 'class="active"';}?> >Observer</a></li>
+	            <li><a href="./fiches.php?ref=insp" title=""<?php if($_GET['ref'] == "insp"){echo 'class="active"';}?> >Inspiration</a></li>
+	            <li><a href="./fiches.php?ref=idea" title=""<?php if($_GET['ref'] == "idea"){echo 'class="active"';}?>>Idéation</a></li>
+	            <li><a href="./fiches.php?ref=prot" title=""<?php if($_GET['ref'] == "prot"){echo 'class="active"';}?>>Prototypage</a></li>
+	            <li><a href="./fiches.php?ref=test" title=""<?php if($_GET['ref'] == "test"){echo 'class="active"';}?>>Tester et Apprendre</a></li>
+	        </ul>
+	        <div class="clear"></div>
+	    </div>
 
-  <!-- main menu -->
-  <div id="mainmenu">
-      <ul>
-          <li><a href="index.html" title="">Accueil</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-          <li><a href="fiches.php" title=""class="active">Fiches</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-          <li><a href="#" title="">Utilisateurs</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-          <li><a href="#" title="">Settings</a></li>
-      </ul>
-  </div>
-  <!-- end mainmenu -->
-
-    <div id="submenu">
-        <ul>
-            <li><a href="./fiches.php?ref=comp" title=""<?php if($_GET['ref'] == "comp"){echo 'class="active"';}?> >Comprendre</a></li>
-            <li><a href="./fiches.php?ref=obs" title=""<?php if($_GET['ref'] == "obs"){echo 'class="active"';}?> >Observer</a></li>
-            <li><a href="./fiches.php?ref=insp" title=""<?php if($_GET['ref'] == "insp"){echo 'class="active"';}?> >Inspiration</a></li>
-            <li><a href="#" title=""<?php if($_GET['ref'] == "insp"){echo 'class="active"';}?>>Idéation</a></li>
-            <li><a href="#" title=""<?php if($_GET['ref'] == "insp"){echo 'class="active"';}?>>Prototypage</a></li>
-            <li><a href="#" title=""<?php if($_GET['ref'] == "insp"){echo 'class="active"';}?>>Tester et Apprendre</a></li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-
-  <!-- content default-->
-
+	  <!-- content default-->
+	
 
       <div id="content">
 
@@ -59,47 +59,60 @@
                 <h3><span class="title">Module d'edition des fiches</span><span class="underlined">&nbsp;</span></h3>
 				<?php
 					
-if(isset($_GET['ref'])){
-
-switch ($_GET['ref']) {
-    case "comp":
-        include 'fiches_comp.php';
-        break;
-    case "obs":
-        include 'fiches_obs.php';
-        break;
-    case "insp":
-        include 'fiches_insp.php';
-        break;
-    case "edit":
-        include 'fiches_edit.php';
-        break;
-    case "create":
-        include 'fiches_create.php';
-        break;
-}
-	
-}
-else{
-	echo '<div style="margin-left: :20px; margin-right :20px; text-align: center">
-					<h1>Good Luck ;)</h1>
-					</div>';
-}
-?>
-				
+						if(isset($_GET['ref'])){
+						
+						switch ($_GET['ref']) {
+						    case "comp":
+						        include 'fiches_comp.php';
+						        break;
+						    case "obs":
+						        include 'fiches_obs.php';
+						        break;
+						    case "insp":
+						        include 'fiches_insp.php';
+						        break;
+						    case "idea":
+						        include 'fiches_idea.php';
+						        break;
+						    case "prot":
+						        include 'fiches_prot.php';
+						        break;
+							case "test":
+						        include 'fiches_test.php';
+						        break;
+						    case "edit":
+						        include 'fiches_edit.php';
+						        break;
+						    case "create":
+						        include 'fiches_create.php';
+						        break;
+						    case "view":
+						        include 'fiches_view.php';
+						        break;
+						}
+							
+						}
+						else{
+							echo '<div style="margin-left: :20px; margin-right :20px; text-align: center">
+											<h1>Good Luck ;)</h1>
+											</div>';
+						}
+						?>
+		
       </div>
       
       <!-- end div default content -->
-
-
+      
   <!-- Footer -->
-  <div id="footer">
-      <ul>
-          <h3>Facilite-moi - 2018</h1>
-      </ul>
-  </div>
-
+  
+	  <div id="footer">
+	      <ul>
+	          <h3>Facilite-moi - 2018</h3>
+	      </ul>
+	  </div>
 </div>
+
+
 <!-- end div page -->
 </body>
 
