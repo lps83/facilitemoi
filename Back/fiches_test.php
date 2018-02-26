@@ -59,7 +59,7 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='./fiches.php?ref=view&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
+                            <td class="action"><a href='./fiches.php?ref=view&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a>	<a href='./fiches.php?ref=del&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a>	<a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
                           </tr><?php 
 	    }
 	    else{
@@ -74,7 +74,7 @@ while($data = mysqli_fetch_array($result))
                             <td><?php echo $data['P5'];?></td>
                             <td><?php echo $data['P6'];?></td>
                             
-                            <td class="action"><a href='./fiches.php?ref=edit&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a><a href='./fiches_deletedb.php?Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a><a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
+                            <td class="action"><a href='./fiches.php?ref=edit&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/contents.gif" alt="" title="" /></a>	<a href='./fiches.php?ref=del&Section=test&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/trash_on.gif" alt="" title="" /></a>	<a href='./fiches.php?ref=edit&id=<?php echo $data['ID'];?>' title=""><img src="img/icons/edit_small.gif" alt="" title="" /></a></td>
                           </tr>
                                                       
                             <?php  

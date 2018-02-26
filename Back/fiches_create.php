@@ -33,12 +33,12 @@ error_reporting(E_ALL);
 
                 <h3><span class="title">Edition de la fiche</span><span class="underlined">&nbsp;</span></h3>      
                 <div style="margin: auto; padding: inherit;">
-	                
+	                <div class="row">
 	                <FORM method="get" action="./fiches_editdb.php">
 		                
 					<input type="hidden" name="ID" value="<?php echo $id;?>" />
 	                <input type="hidden" name="Section" value="<?php echo $_GET['type'];?>" />
-	            <div class="row">
+	            
 
   <div class="col-sm-5">Nom : 
 	  

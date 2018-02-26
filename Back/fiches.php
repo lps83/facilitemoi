@@ -45,6 +45,21 @@
 	            <li><a href="./fiches.php?ref=idea" title=""<?php if($_GET['ref'] == "idea"){echo 'class="active"';}?>>Idéation</a></li>
 	            <li><a href="./fiches.php?ref=prot" title=""<?php if($_GET['ref'] == "prot"){echo 'class="active"';}?>>Prototypage</a></li>
 	            <li><a href="./fiches.php?ref=test" title=""<?php if($_GET['ref'] == "test"){echo 'class="active"';}?>>Tester et Apprendre</a></li>
+	            <?php if($_GET['ref'] == "edit"){
+	            
+	            	echo '<li><a href="#" title="" class="active">Edition</a></li>';
+	            }
+	            	if($_GET['ref'] == "view"){
+		            
+		            echo '<li><a href="#" title="" class="active">Visualisation</a></li>';
+		            	}
+		            if($_GET['ref'] == "del"){
+		            
+		            echo '<li><a href="#" title="" class="active">Suppression</a></li>';
+		            	}
+	            	?>
+	            
+	            
 	        </ul>
 	        <div class="clear"></div>
 	    </div>
@@ -88,6 +103,9 @@
 						        break;
 						    case "view":
 						        include 'fiches_view.php';
+						        break;
+						    case "del":
+						        include 'fiches_deletedb.php';
 						        break;
 						}
 							
