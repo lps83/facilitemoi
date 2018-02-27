@@ -31,10 +31,10 @@
 </div>
 
 <div class="jumbotron text-center m-0">
-  <i class="fab fa-angellist m-3 "style="font-size:50px;"></i>
+  <img src="./img/content.gif" alt="" id="uneImage" />
   <p class="text-center">En quelques cliques, créez votre atelier de facilitation <strong>sur-mesure</strong> en fonction de besoins !</p>
   <p class="lead text-center">
-    <a class="btn btn-primary btn-lg" href="templates/step1.html" role="button">Créer un atelier !</a>
+    <a id="boutonstart" class="btn btn-primary btn-lg" role="button">Créer un atelier !</a>
   </p>
 </div>
 
@@ -79,5 +79,30 @@
      </footer>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script>
+document.getElementById("boutonstart").addEventListener("mouseover", mouseOver);
+document.getElementById("boutonstart").addEventListener("mouseout", mouseOut);
+document.getElementById("boutonstart").addEventListener("click", mouseclik);
+
+function mouseOver() {
+    document.getElementById("uneImage").src = "./img/happy.gif";
+}
+
+function mouseOut() {
+    document.getElementById("uneImage").src = "./img/content.gif";
+}
+function mouseclik() {
+    document.getElementById("uneImage").src = "./img/kiss.gif";
+    setTimeout(mafonction, 600); 
+}
+
+function mafonction() {
+    window.location.href='./templates/step1.html';
+}
+
+
+
+</script>
+
   </body>
 </html>
