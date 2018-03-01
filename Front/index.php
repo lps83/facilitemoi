@@ -9,15 +9,15 @@
   <body>
 
 <nav class="navbar fixed-top navbar-light bg-primary justify-content-between">
-  <a class="navbar-header" href="index.html">
+  <a class="navbar-header" href="index.php">
     <img src="assets/logofacilitemoi.png" width="30%" class="d-inline-block align-top" alt="facilite_moi_logo">
   </a>
   <form class="form-inline">
-  <a class="btn btn-outline-light my-2 my-sm-0" href="templates/step1.html" role="button">Créer un atelier</a>
+  <a class="btn btn-outline-light my-2 my-sm-0" href="templates/step1.php" role="button">Créer un atelier</a>
   </form>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron m-0">
   <h1 class="display-4 text-center">Le 1<sup>er</sup>générateur d'atelier de facilitation</h1>
   <p class="lead text-center">Propulsé par le Cyclotron</p>
 </div>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="jumbotron text-center m-0">
-  <img src="./img/content.gif" alt="" id="uneImage" />
+  <img src="./img/content.gif" alt="" id="uneImage" style="margin-bottom: 10px" />
   <p class="text-center">En quelques cliques, créez votre atelier de facilitation <strong>sur-mesure</strong> en fonction de besoins !</p>
   <p class="lead text-center">
     <a id="boutonstart" class="btn btn-primary btn-lg" role="button">Créer un atelier !</a>
@@ -97,7 +97,7 @@ function mouseclik() {
 }
 
 function mafonction() {
-    window.location.href='./templates/step1.html';
+    window.location.href='./templates/step1.php';
 }
 
 

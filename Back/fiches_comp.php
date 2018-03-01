@@ -30,7 +30,7 @@
 	                      
 	                      <?php 
 		                      
-							  ini_set('display_errors','on');
+ini_set('display_errors','on');
 error_reporting(E_ALL);
 
 	$con=mysqli_connect("localhost","root","root","facilitemoi");

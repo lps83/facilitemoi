@@ -43,12 +43,11 @@ mysqli_close($con);
 		               	<br>
 		               	
 					   	<div class="row">
-					   	<div class="col-sm-2" style="text-align: center">P1 : <?php echo $data['P1'];?></div>
-						<div class="col-sm-2" style="text-align: center">P2 : <?php echo $data['P2'];?></div>
-						<div class="col-sm-2" style="text-align: center">P3 : <?php echo $data['P3'];?></div>
-						<div class="col-sm-2" style="text-align: center">P4 : <?php echo $data['P4'];?></div>
-						<div class="col-sm-2" style="text-align: center">P5 : <?php echo $data['P5'];?></div>
-						<div class="col-sm-2" style="text-align: center">P6 : <?php echo $data['P6'];?></div>
+					   	<div class="col-sm-2" style="text-align: center">Fun / participants : <?php echo $data['P1'];?></div>
+						<div class="col-sm-2" style="text-align: center">Concret : <?php echo $data['P2'];?></div>
+						<div class="col-sm-2" style="text-align: center">Complexité participants : <?php echo $data['P3'];?></div>
+						<div class="col-sm-2" style="text-align: center">Complexité organisateur : <?php echo $data['P4'];?></div>
+						<div class="col-sm-2" style="text-align: center">Genre : <?php echo $data['Genre'];?></div>
 						</div>  
 						
 	                </div>
